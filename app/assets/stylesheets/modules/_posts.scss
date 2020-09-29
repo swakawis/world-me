@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+}
+
+.Header {
+  height: 100px;
+  background-color: green;
+  &__logo {
+    font-size: 20px;
+    font-family: cursive;
+    color: #ffffff;
+    margin-left: 10px;
+  }
+  &__box {
+    display: flex;
+    padding: 0 50px;
+    justify-content: space-between;
+    height: 60px;
+    &__left {
+      width: 30px;
+    }
+    &__group-name {
+      width: 100%;
+      font-size: 20px;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+    }
+    .Menu {
+      width: 50px;
+      & label {
+        width: 30px;
+        height: 30px;
+        display: block;
+        margin: 0;
+        padding: 5px;
+        font-size: 25px;
+        line-height: 1;
+        color :#fff;
+        background : green;
+        cursor :pointer;
+      }
+      & label:hover {
+        background-color: #ccc;
+      }
+        & input {
+          display: none;
+        }
+        & input:checked + ul {
+          display: block;
+          line-height: 1.5;
+          padding: 1px 1px;
+        }
+        & ul {
+          display: none;
+          width: 90px;
+          margin: 0;
+          padding: 0 1px;
+          background :#f4f4f4;
+          list-style: none;
+          overflow: hidden;
+          line-height: 0;
+          transition: 0.2s;
+          z-index: 1000;
+          & a {
+            height: 0;
+            font-size: 14px;
+            overflow: hidden;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+          }
+        }
+    }
+  }
+}
+
+.Main {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 660px;
+  &__topic {
+    height: 400px;
+    padding: 30px;
+    position: relative;
+    color: #333333;
+    background-size: cover;
+    background-position: center;
+    border-radius: 3px;
+    background-color: lightgreen;
+  }
+  .image {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.MessageField {
+  height: calc(100vh - 100px - 400px - 100px);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 660px;
+  box-sizing: border-box;
+  padding: 35px 40px 0;
+  background-color: lightgreen;
+  overflow: scroll;
+  .Message__box {
+    background-color: #fafafa;
+    overflow: scroll;
+    border-radius: 30px;
+    margin-bottom: 40px;
+    .MessageInfo {
+      display: flex;
+      &__userName {
+        margin-left: 20px;
+        color: #333333;
+        font-size: 16px;
+      }
+      &__date {
+        margin-left: 10px;
+        color: #999999;
+        font-size: 12px;
+      }
+    }
+    .Message {
+      &__content {
+        margin: 12px 0 46px 10px;
+        color: #434A54;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.Footer {
+  height: 100px;
+  background-color: #dddddd;
+  box-sizing: border-box;
+  padding: 20px 50px 20px 40px;
+  .Form {
+    height: 50px;
+    form{
+      display: flex;
+      .input-box {
+        width: 100%;
+        position: relative;
+        display: flex;
+        margin: 0 20px 0 70px;
+        &__text {
+          border-style: none;
+          border-radius: 30px;
+          height: 50px;
+          width: 100%;
+          padding: 0 40px 0 15px;
+          color: #aaaaaa;
+        }
+        &__image {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          cursor: pointer;
+          font-size: 20px;
+          &__file {
+            display: none;
+          }
+        }
+      }
+      .submit {
+        background-color: #dddddd;
+        border: none;
+        font-size: 20px;
+        height: 50px;
+        width: 20px;
+        margin-left: 15px;
+        padding: 10px 0px;
+        cursor: pointer;
+      }
+    }
+  }
+}
