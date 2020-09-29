@@ -4,19 +4,22 @@
   .Header__box
     .Header__box__left
     .Header__box__group-name
-      group-name
-    %label{class: "Header__box__icon"}
-      = icon('fas', 'bars')
-      %input{type: "checkbox", class: "Header__box__icon__edit"}
-      %ul
-        %li 
+      Group of USA news
+    .Menu
+      %label
+        = icon('fas', 'bars')
+        %input{type: "checkbox"}
+        %ul
+          %li 
           = link_to "トップページ", "#"
-        %li 
+          %li 
           = link_to "ログアウト", "#"
 .Main
   .Main__topic
     = image_tag "publicdomainq-0006760qsh.jpg", alt: "sample image", id: "pic1", class: "image"
     = link_to 'https://www.worldme.com/#'
+    %br More than 3,000 people is gathering for a protest demonstration in USA
+    = link_to "翻訳", "#"
 
 .MessageField
   .Message__box
@@ -28,6 +31,19 @@
     .Message
       .Message__content
         OMG, what is happening?
+        %br
+        = link_to "翻訳", "#"
+
+    .MessageInfo
+      .MessageInfo__userName
+        defg
+      .MessageInfo__date
+        2020年??月??日 ??時??日
+    .Message
+      .Message__content
+        This is happenning now
+        %br
+        = link_to "翻訳", "#"
 .Footer
   .Form
     %form.new_message
