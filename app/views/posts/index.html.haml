@@ -1,0 +1,42 @@
+.Header
+  .Header__logo
+    WorldMe
+  .Header__box
+    .Header__box__left
+    .Header__box__group-name
+      group-name
+    %label{class: "Header__box__icon"}
+      = icon('fas', 'bars')
+      %input{type: "checkbox", class: "Header__box__icon__edit"}
+      %ul
+        %li 
+          = link_to "トップページ", "#"
+        %li 
+          = link_to "ログアウト", "#"
+.Main
+  .Main__topic
+    = image_tag "publicdomainq-0006760qsh.jpg", alt: "sample image", id: "pic1", class: "image"
+    = link_to 'https://www.worldme.com/#'
+
+.MessageField
+  .Message__box
+    .MessageInfo
+      .MessageInfo__userName
+        abc
+      .MessageInfo__date
+        2020年??月??日 ??時??日
+    .Message
+      .Message__content
+        OMG, what is happening?
+.Footer
+  .Form
+    %form.new_message
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder: "type here"}
+        %label{class: "input-box__image"}
+          = icon('far', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+      %button{type: "submit", class: "submit"}
+        = icon('fas', 'paper-plane')
+      
+        
