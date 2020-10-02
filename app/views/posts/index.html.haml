@@ -3,6 +3,8 @@
     WorldMe
   .Header__box
     .Header__box__left
+      %h3.user-name
+        = current_user.name
     .Header__box__group-name
       Group of USA news
     .Menu
@@ -11,9 +13,11 @@
         %input{type: "checkbox"}
         %ul
           %li 
-          = link_to "トップページ", "#"
-          %li 
+          = link_to edit_user_path(current_user) do
+            編集
+          %li
           = link_to "ログアウト", "#"
+
 .Main
   .Main__topic
     = image_tag "publicdomainq-0006760qsh.jpg", alt: "sample image", id: "pic1", class: "image"

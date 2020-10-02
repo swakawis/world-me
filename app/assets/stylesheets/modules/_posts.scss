@@ -13,11 +13,19 @@
   }
   &__box {
     display: flex;
-    padding: 0 50px;
+    padding: 0 150px 0 50px;
     justify-content: space-between;
     height: 60px;
     &__left {
-      width: 30px;
+      width: 200px;
+      display: flex;
+      .user-name {
+        margin: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+      }
     }
     &__group-name {
       width: 100%;
