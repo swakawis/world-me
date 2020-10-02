@@ -1,0 +1,51 @@
+.AccountPage {
+  height: 100vh;
+  background: #FFF url(16873156139_f2493e3b50_k.jpg) no-repeat center top scroll;
+  display: block;
+  text-align: right;
+  padding-right: 30px;
+  position: relative;
+  &__credit a {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #FFF;
+    text-decoration: none;
+  }
+  &__logo {
+    font-size: 50px;
+    font-family: cursive;
+    color: #ffffff;
+    margin-left: 10px;
+    float: left;
+  }
+  &__message {
+    color: #ffffff;
+    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    font-family: "UD デジタル 教科書体 N-B","UD Digi Kyokasho N-B";
+    font-weight: bold;
+  }
+  &__title {
+    color: #FFF;
+    padding-top: 20px;
+    & a {
+      color: #FFF;
+      text-decoration: none;
+    }
+  }
+  &__form {
+    color: #FFF;
+    .FormField {
+      &__label--normal {
+        & label {
+          color: #FFF;
+        }
+      }
+    }
+  }
+}
